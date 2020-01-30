@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!-- <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" > -->
+
+<suite name="Cucumber Project" verbose="1">
+	<!-- <parameter name = "browserName" value = "chrome"></parameter> -->
+
+	<listeners>
+		<listener
+			class-name="org.Retry.Listener.MyAnnotationTransformer" />
+	</listeners>
+
+
+	<test name="Maven Cucumber Tests">
+		<classes>
+			<class name="org.techAltum.runner.TestRunner" />
+		</classes>
+	</test>
+</suite>
